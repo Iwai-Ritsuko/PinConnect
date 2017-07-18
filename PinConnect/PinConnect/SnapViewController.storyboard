@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mYe-qR-VLk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Snap View Controller-->
+        <scene sceneID="rKx-cV-1fC">
+            <objects>
+                <viewController id="mYe-qR-VLk" customClass="SnapViewController" customModule="PinConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wsY-rK-R4o"/>
+                        <viewControllerLayoutGuide type="bottom" id="XEe-uO-ixf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BSf-tQ-Yyc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-xm-ahT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wla-ww-ArH">
+                                <rect key="frame" x="502" y="20" width="98" height="580"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfr-m1-GIO">
+                                        <rect key="frame" x="12" y="533" width="75" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="BQz-PD-Jbg"/>
+                                            <constraint firstAttribute="height" constant="30" id="NHk-Ya-W1W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="キャンセル">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonDidTapped:" destination="mYe-qR-VLk" eventType="touchUpInside" id="QJy-8E-iAq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHe-BR-RyM">
+                                        <rect key="frame" x="29" y="270" width="40" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="LF1-8m-Vht"/>
+                                            <constraint firstAttribute="height" constant="40" id="rFP-lC-NxQ"/>
+                                        </constraints>
+                                        <state key="normal" image="009.png"/>
+                                        <connections>
+                                            <action selector="snapButtonDidTapped:" destination="mYe-qR-VLk" eventType="touchUpInside" id="nBo-rJ-6MO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nHe-BR-RyM" firstAttribute="centerX" secondItem="wla-ww-ArH" secondAttribute="centerX" id="HKc-ka-Vgy"/>
+                                    <constraint firstAttribute="bottom" secondItem="pfr-m1-GIO" secondAttribute="bottom" constant="17" id="QBb-r5-aBW"/>
+                                    <constraint firstAttribute="width" constant="98" id="iGr-ba-tPz"/>
+                                    <constraint firstItem="pfr-m1-GIO" firstAttribute="centerX" secondItem="wla-ww-ArH" secondAttribute="centerX" id="uHF-vW-cim"/>
+                                    <constraint firstItem="nHe-BR-RyM" firstAttribute="centerY" secondItem="wla-ww-ArH" secondAttribute="centerY" id="xUg-4B-EJX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rqY-xm-ahT" firstAttribute="leading" secondItem="BSf-tQ-Yyc" secondAttribute="leadingMargin" constant="-20" id="7Xz-8z-R3x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rqY-xm-ahT" secondAttribute="trailing" constant="-20" id="GNE-9P-M9B"/>
+                            <constraint firstItem="XEe-uO-ixf" firstAttribute="top" secondItem="rqY-xm-ahT" secondAttribute="bottom" id="N2N-vC-dfR"/>
+                            <constraint firstItem="XEe-uO-ixf" firstAttribute="top" secondItem="wla-ww-ArH" secondAttribute="bottom" id="irp-BZ-hWi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wla-ww-ArH" secondAttribute="trailing" constant="-20" id="peN-Dl-cc3"/>
+                            <constraint firstItem="rqY-xm-ahT" firstAttribute="top" secondItem="wsY-rK-R4o" secondAttribute="bottom" id="pmV-Jl-76F"/>
+                            <constraint firstItem="wla-ww-ArH" firstAttribute="top" secondItem="wsY-rK-R4o" secondAttribute="bottom" id="sia-aJ-Jx4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="preview" destination="rqY-xm-ahT" id="9Rc-1c-U7e"/>
+                        <outlet property="snapButton" destination="nHe-BR-RyM" id="C28-TV-hnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVW-ZF-ai2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="009.png" width="40" height="40"/>
+    </resources>
+</document>

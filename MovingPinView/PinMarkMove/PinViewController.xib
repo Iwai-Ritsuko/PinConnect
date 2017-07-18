@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PinViewController" customModule="PinMarkMove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjC-js-OvK">
+                    <rect key="frame" x="225" y="67" width="150" height="150"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="esS-bH-yeY"/>
+                        <constraint firstAttribute="width" constant="150" id="ynI-VE-xPZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <state key="normal" title="↑"/>
+                    <connections>
+                        <action selector="touchDownArrowButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="dwv-en-XBg"/>
+                        <outletCollection property="gestureRecognizers" destination="Uae-Od-s7E" appends="YES" id="XnC-MV-NkS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AT-LC-DAw">
+                    <rect key="frame" x="225" y="383" width="150" height="150"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="gzU-0D-GPA"/>
+                        <constraint firstAttribute="height" constant="150" id="upv-cR-DFD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <state key="normal" title="↓"/>
+                    <connections>
+                        <action selector="touchDownArrowButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="KKr-iI-h4P"/>
+                        <outletCollection property="gestureRecognizers" destination="ZTC-Sw-Vx2" appends="YES" id="xDN-vw-tmj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hse-O3-dzf">
+                    <rect key="frame" x="8" y="528" width="209" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="TMk-XP-Ygr"/>
+                        <constraint firstAttribute="width" constant="209" id="vE3-ak-n2J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="tappedOKButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ljo-lm-eJx"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7o-Ua-Bn9">
+                    <rect key="frame" x="225" y="225" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="2i5-FV-0EJ"/>
+                        <constraint firstAttribute="height" constant="150" id="Nah-4P-GsO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAr-vY-eTu">
+                    <rect key="frame" x="383" y="528" width="209" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="209" id="n8u-IY-KCa"/>
+                        <constraint firstAttribute="height" constant="64" id="u2D-C3-bVK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="tappedCancelButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="5cY-BM-KtC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-oD-85t">
+                    <rect key="frame" x="67" y="225" width="150" height="150"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="XMT-IT-BZL"/>
+                        <constraint firstAttribute="height" constant="150" id="aBr-2h-4rE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <state key="normal" title="←"/>
+                    <connections>
+                        <action selector="touchDownArrowButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="YpL-Xm-mrK"/>
+                        <outletCollection property="gestureRecognizers" destination="8OI-IU-Bdn" appends="YES" id="edP-3p-eLv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ep-2z-eiU">
+                    <rect key="frame" x="383" y="225" width="150" height="150"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="LM0-eg-nk0"/>
+                        <constraint firstAttribute="height" constant="150" id="grQ-kd-Gov"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <state key="normal" title="→"/>
+                    <connections>
+                        <action selector="touchDownArrowButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fbe-hI-mE6"/>
+                        <outletCollection property="gestureRecognizers" destination="6RW-t2-Jug" appends="YES" id="eC4-ZB-7mO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4AT-LC-DAw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0bs-O6-TBU"/>
+                <constraint firstAttribute="bottom" secondItem="Hse-O3-dzf" secondAttribute="bottom" constant="8" id="4M6-aT-rxN"/>
+                <constraint firstAttribute="trailing" secondItem="XAr-vY-eTu" secondAttribute="trailing" constant="8" id="DK1-jh-aW6"/>
+                <constraint firstItem="ehI-oD-85t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FZJ-wJ-Pxg"/>
+                <constraint firstAttribute="bottom" secondItem="XAr-vY-eTu" secondAttribute="bottom" constant="8" id="TdP-K9-IWs"/>
+                <constraint firstItem="Y7o-Ua-Bn9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="a7b-nE-RRJ"/>
+                <constraint firstItem="Y7o-Ua-Bn9" firstAttribute="leading" secondItem="ehI-oD-85t" secondAttribute="trailing" constant="8" id="duI-6H-5pS"/>
+                <constraint firstItem="Hse-O3-dzf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gBG-cn-VpX"/>
+                <constraint firstItem="4AT-LC-DAw" firstAttribute="top" secondItem="Y7o-Ua-Bn9" secondAttribute="bottom" constant="8" id="gov-58-MnX"/>
+                <constraint firstItem="7Ep-2z-eiU" firstAttribute="leading" secondItem="Y7o-Ua-Bn9" secondAttribute="trailing" constant="8" id="pRC-1r-fPd"/>
+                <constraint firstItem="QjC-js-OvK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pdB-qA-WRI"/>
+                <constraint firstItem="7Ep-2z-eiU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="t1v-tm-fet"/>
+                <constraint firstItem="Y7o-Ua-Bn9" firstAttribute="top" secondItem="QjC-js-OvK" secondAttribute="bottom" constant="8" id="vHA-sU-56i"/>
+                <constraint firstItem="Y7o-Ua-Bn9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y6O-LU-fCx"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="406"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Uae-Od-s7E" userLabel="Up Arrow Long Press Gesture Recognizer">
+            <connections>
+                <action selector="holdDownArrowButton:" destination="iN0-l3-epB" id="OKS-SC-Cod"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="6RW-t2-Jug" userLabel="Right Arrow Long Press Gesture Recognizer">
+            <connections>
+                <action selector="holdDownArrowButton:" destination="iN0-l3-epB" id="cqp-iA-dAo"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ZTC-Sw-Vx2" userLabel="Down Arrow Long Press Gesture Recognizer">
+            <connections>
+                <action selector="holdDownArrowButton:" destination="iN0-l3-epB" id="apc-dE-hFt"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="8OI-IU-Bdn" userLabel="Left Arrow Long Press Gesture Recognizer">
+            <connections>
+                <action selector="holdDownArrowButton:" destination="iN0-l3-epB" id="gH8-eS-9m4"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+</document>
